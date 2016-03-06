@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FC4DE5A1C8CE4CA009C0879 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC4DE591C8CE4CA009C0879 /* API.swift */; };
 		DD83A65FD51D4463AEBC1668 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2CECA2F91A946299B56DD62 /* Pods.framework */; };
 		DF9CC3A71C863BAE00E2DE5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CC3A61C863BAE00E2DE5A /* AppDelegate.swift */; };
 		DF9CC3A91C863BAE00E2DE5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9CC3A81C863BAE00E2DE5A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FC4DE591C8CE4CA009C0879 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		5ADB10870C92DA3F746A7230 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		831EEF2F56983DD90FBE97C7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B2CECA2F91A946299B56DD62 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				DF9CC3A61C863BAE00E2DE5A /* AppDelegate.swift */,
+				3FC4DE591C8CE4CA009C0879 /* API.swift */,
 				DF9CC3A81C863BAE00E2DE5A /* ViewController.swift */,
 				DF9CC3AA1C863BAE00E2DE5A /* Main.storyboard */,
 				DF9CC3B01C863BAE00E2DE5A /* Assets.xcassets */,
@@ -216,6 +219,7 @@
 			files = (
 				DF9CC3A91C863BAE00E2DE5A /* ViewController.swift in Sources */,
 				DF9CC3A71C863BAE00E2DE5A /* AppDelegate.swift in Sources */,
+				3FC4DE5A1C8CE4CA009C0879 /* API.swift in Sources */,
 				DF9CC3AF1C863BAE00E2DE5A /* TwitterFeed.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
