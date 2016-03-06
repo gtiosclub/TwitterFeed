@@ -14,37 +14,41 @@ public class API {
     
     public enum Endpoints {
         case HomeTimeline()
+        case UserTimeline(String)
+        case Tweet(String)
         
         public var method: Alamofire.Method {
             switch self {
-                case .HomeTimeline(): return .GET
+                case .HomeTimeline: return .GET
+                case .UserTimeline: return .GET
+                case .Tweet:        return .POST
             }
         }
         
         public var parameters: [String : AnyObject] {
-//            switch self {
-//            case .VerifyEmail(let email):
-//                return ["api" : "verify.email", "email" : email]
-//            case .UserInitialize(let authData):
-//                return ["api" : "user.initialize", "authData" : authData]
-//            case .DoesEmailExist(let email):
-//                return ["api" : "user.exists", "email" : email]
-//            case .Dashboard:
-//                return ["api" : "user.dashboard"]
-//            }
-            
-            return [:]
+            switch self {
+            case .HomeTimeline:
+                return [:]
+            case .UserTimeline(let handle):
+                return ["screen_name" : handle]
+            case .Tweet(let tweet):
+                return ["status" : tweet]
+            }
         }
         
         public var path: String {
             switch self {
                 case .HomeTimeline: return "statuses/home_timeline.json"
+                case .UserTimeline: return "statuses/user_timeline.json"
+                case .Tweet:        return "statuses/update.json"
             }
         }
         
         public var description: String {
             switch self {
-            case .HomeTimeline(): return "GET home timeline"
+                case .HomeTimeline:             return "GETting home timeline"
+                case .UserTimeline(let handle): return "GETting user timeline for \(handle)"
+                case .Tweet(let tweet):         return "POSTing tweet: \(tweet)"
             }
         }
     }
